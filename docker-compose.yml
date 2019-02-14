@@ -1,0 +1,11 @@
+version: '3.5'
+
+services:
+  rust:
+    build: 
+        context: .
+        dockerfile: Dockerfile
+    volumes:
+      - .:/rust-workspace
+    ports:
+      - 4444:4444
